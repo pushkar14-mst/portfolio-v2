@@ -1,0 +1,147 @@
+.experience-section {
+  position: relative;
+  padding: 50px 0; /* Adjust as needed */
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px; /* Width of the vertical line */
+  background-color: white;
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  width: 80%; /* Adjust width for boxes */
+  padding-left: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Timeline item alignment for large screens */
+.timeline-item.left {
+  left: -200px;
+}
+
+.timeline-item.right {
+  left: 51.5%;
+}
+
+.timeline-content {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency */
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Ensure content is left-aligned */
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-heading {
+  color: #f3f3f3;
+}
+
+.purple {
+  color: #a50b7c;
+}
+
+/* Responsive for very large screens (e.g., monitors) */
+@media (min-width: 1200px) {
+  .timeline-item.left {
+      left: -250px;
+  }
+
+  .timeline-item.right {
+      left: 53%;
+  }
+
+  .timeline-content {
+      padding: 35px;
+      max-width: 90%;
+  }
+}
+
+/* Responsive for medium screens (small laptops, tablets) */
+@media (max-width: 991px) {
+  .timeline-item {
+      width: 90%;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+      left: 0; /* Full-width layout */
+  }
+
+  .timeline-content {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 25px;
+  }
+
+  .timeline::before {
+      left: 50%; /* Keep vertical line centered */
+  }
+}
+
+/* Responsive for small laptops and large tablets */
+@media (max-width: 768px) {
+  .timeline-item {
+      width: 95%; /* Larger width for small laptops */
+      margin: 10px auto;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+      left: 0; /* Full-width layout */
+  }
+
+  .timeline-content {
+      padding: 20px; /* Reduce padding for small screens */
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .timeline::before {
+      display: none; /* Hide the vertical line on smaller screens */
+  }
+}
+
+/* Responsive for small mobile screens */
+@media (max-width: 576px) {
+  .timeline-item {
+      width: 100%; /* Full width for mobile */
+      margin: 10px auto;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+      left: 0; /* Full-width layout */
+      text-align: left; /* Ensure left alignment on mobile */
+  }
+
+  .timeline-content {
+      padding: 15px; /* Further reduce padding */
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .timeline::before {
+      display: none; /* Ensure the vertical line is hidden on mobile screens */
+  }
+}
