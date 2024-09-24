@@ -8,7 +8,7 @@ import news from "../../Assets/Projects/News.png";
 import music from "../../Assets/Projects/music.png";
 import ipl from "../../Assets/Projects/IPL.png";
 import employee from "../../Assets/Projects/Employee.png";
-
+import cancer from "../../Assets/Projects/cancer.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -73,7 +73,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={music}
+              imgPath={cancer}
               isBlog={false}
               title="Breast Cancer Detection"
               description="
