@@ -38,7 +38,7 @@
 }
 
 .timeline-content {
-  background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust transparency */
   padding: 30px;
   border-radius: 8px;
   position: relative;
