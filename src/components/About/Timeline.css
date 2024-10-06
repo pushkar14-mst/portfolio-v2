@@ -44,7 +44,7 @@
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   text-align: left; /* Ensure content is left-aligned */
 }
 
