@@ -21,9 +21,10 @@ function Home2() {
               <b className="purple"> Indiana University Bloomington.</b>
               <br />
               <br />
-              As an intern at Women Who Code, I collaborate on generating
-              innovative tech ideas and work on exciting new projects. I also
-              lead workshops on a range of technologies, including
+              As an intern at <b className="purple">Women Who Code</b>, I
+              collaborate on generating innovative tech ideas and work on
+              exciting new projects. I also lead workshops on a range of
+              technologies, including
               <b className="purple"> SQL, Python, Data Structures, and more </b>
               , empowering others to advance their technical skills.
               <br />
