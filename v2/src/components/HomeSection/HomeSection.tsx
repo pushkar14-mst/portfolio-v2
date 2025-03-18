@@ -1,34 +1,16 @@
 import React from "react";
 import "./HomeSection.css";
 import avatar from "../../assets/avatar.png";
-import { INavBarProps, INavBar } from "../../types/types";
-const navItems: INavBar[] = [
-  {
-    name: "About",
-    link: "#",
-  },
-  {
-    name: "Experience",
-    link: "#",
-  },
-  {
-    name: "Skills",
-    link: "#",
-  },
-  {
-    name: "Projects",
-    link: "#",
-  },
-
-  {
-    name: "Contact",
-    link: "#",
-  },
-];
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const HomePage: React.FC = () => {
   return (
     <section className="home-section">
+      <a href="#contact" className="scroll-down">
+        Scroll Down
+      </a>
       <div className="main-title">
         <div className="memoji">
           <img src={avatar} />
@@ -36,7 +18,7 @@ const HomePage: React.FC = () => {
             👋, I am{" "}
             <span
               style={{
-                color: "#BFD6EA",
+                color: "#abaff2",
               }}
             >
               Prachi
@@ -51,23 +33,24 @@ const HomePage: React.FC = () => {
           </h1>
         </div>
       </div>
-      <div className="nav-area">
-        <NavBar navItems={navItems} />
-      </div>
+
+      <SocialMedia />
     </section>
   );
 };
 
-const NavBar: React.FC<INavBarProps> = (props: INavBarProps) => {
+const SocialMedia: React.FC = () => {
   return (
-    <div className="nav-bar">
-      <ul>
-        {props.navItems.map((item) => (
-          <li className="nav-item">
-            <a href={item.link}>{item.name}</a>
-          </li>
-        ))}
-      </ul>
+    <div className="social-media">
+      <a href="https://www.linkedin.com/in/manohar19" target="_blank">
+        <BsLinkedin color="#abaff2" />
+      </a>
+      <a href="https://github.com/manohar-19" target="_blank">
+        <FaGithub color="#abaff2" />
+      </a>
+      <a href="https://dribbble.com" target="_blank">
+        <FiMail color="#abaff2" />
+      </a>
     </div>
   );
 };
