@@ -1,0 +1,157 @@
+.home-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #4043a0 0%, #21235e 100%);
+}
+
+.main-title {
+  display: flex;
+  width: 100%;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f0f2ff;
+  gap: 40px;
+}
+
+.main-title h1 {
+  font-size: 5.2rem;
+  line-height: 1.1;
+}
+.memoji {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+
+  display: flex;
+}
+.memoji img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.memoji h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #f0f2ff;
+  text-align: left;
+}
+.title {
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #f0f2ff;
+  text-align: left;
+}
+
+.nav-area {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.nav-bar li {
+  display: flex;
+  gap: 10px;
+}
+.nav-bar a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #f0f2ff;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: #6e74dd;
+  transition: color 0.25s;
+}
+
+.nav-bar a.active {
+  color: #6e74dd;
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    flex-direction: column;
+  }
+  .main-title h1 {
+    font-size: 3rem; /* Reduce title size for smaller screens */
+    text-align: center;
+  }
+
+  .title,
+  .memoji h1 {
+    font-size: 1rem; /* Smaller font size for better readability */
+  }
+
+  .nav-bar ul {
+    gap: 10px; /* Reduce gap between nav links */
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .nav-bar a {
+    font-size: 1.1rem; /* Adjust nav link font size */
+  }
+
+  .home-section {
+    padding: 0 20px; /* Add some padding to prevent content from touching the edges */
+  }
+
+  .nav-area {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* Extra small screens (mobile portrait) */
+@media screen and (max-width: 480px) {
+  .main-title h1 {
+    font-size: 2.5rem; /* Even smaller title font size */
+  }
+
+  .title,
+  .memoji h1 {
+    font-size: 0.9rem; /* Adjust for better fit */
+  }
+
+  .nav-bar a {
+    font-size: 1rem; /* Slightly smaller nav links */
+  }
+
+  .nav-area {
+    padding: 10px; /* Further reduce padding */
+  }
+}
