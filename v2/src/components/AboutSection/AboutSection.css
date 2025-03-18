@@ -1,0 +1,167 @@
+.about-section {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.about-section h3 {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #f0f2ff;
+  text-align: center;
+  margin-bottom: 0;
+}
+.about-section h2 {
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #abaff2;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  margin-top: 0;
+}
+.container {
+  width: 100%;
+  margin: 1rem;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+  background-color: #21235e;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #abaff2, transparent);
+  display: grid;
+  place-items: center;
+}
+.about__me-image {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+}
+.about__me-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  /* width: 100%; */
+  object-fit: cover;
+}
+.about__me-image:hover {
+  transform: rotate(0deg);
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.about__card {
+  background: #abaff2;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: #abaff2;
+  cursor: default;
+}
+
+.about__icon {
+  color: #f0f2ff;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 1.5rem;
+}
+
+.about__card small {
+  font-size: 1.3rem;
+  color: #f0f2ff;
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: #f0f2ff;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #abaff2;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+.btn-primary {
+  background: #abaff2;
+  color: var(--color-bg);
+}
+/* ======media queries for tablets(medium devices) =========*/
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ======media queries for mobile(small devices) =========*/
+
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about__content {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+}
