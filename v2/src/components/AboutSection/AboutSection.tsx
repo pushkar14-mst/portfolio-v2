@@ -38,15 +38,18 @@ const AboutSection: React.FC = () => {
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ completed</small>
+              <small>10+ completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            atque architecto similique sint error accusantium tenetur! A
-            quibusdam ad quasi voluptatibus, porro, hic autem iste, dolor fuga
-            eum delectus quia.
+            I am student pursuing Master's degree in Computer Science at Indiana
+            University Bloomington.As an lead intern at Women Who Code, I
+            collaborate on generating innovative tech ideas and work on exciting
+            new projects. I also lead workshops on a range of technologies,
+            including SQL, Python, Netwroking tips, Data Structures, and more ,
+            empowering others to advance their technical and networking skills.
           </p>
+
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
