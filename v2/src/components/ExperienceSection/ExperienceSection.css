@@ -1,12 +1,13 @@
 .experience-section {
   position: relative;
   display: flex;
-  height: 150vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  padding: 50px;
+  padding: auto 50px;
+
   background: linear-gradient(181.7deg, #21235e 1.49%, #4043a0 100.92%);
 }
 .experience-section h3 {
@@ -131,9 +132,9 @@
   }
 }
 @media (max-width: 767px) {
-  .experience-section {
+  /* .experience-section {
     height: 230vh;
-  }
+  } */
   .timeline {
     width: 100%;
     padding-bottom: 0;

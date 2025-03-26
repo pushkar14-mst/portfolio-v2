@@ -1,7 +1,7 @@
 #skills {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +100,10 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  #skills {
+    padding: 10px;
+  }
   .skills__container {
     gap: 1rem;
   }
