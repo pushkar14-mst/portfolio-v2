@@ -2,7 +2,7 @@ import youtube from "../../assets/Youtube.png";
 import vacaybuddy from "../../assets/Vacay.png";
 import news from "../../assets/News.png";
 import music from "../../assets/music.png";
-import ipl from "../../Assets/IPL.png";
+import ipl from "../../assets/IPL.png";
 import employee from "../../assets/Employee.png";
 import cancer from "../../assets/cancer.png";
 
