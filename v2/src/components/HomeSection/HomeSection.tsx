@@ -8,9 +8,11 @@ import { FiMail } from "react-icons/fi";
 const HomePage: React.FC = () => {
   return (
     <section className="home-section">
-      <a href="#contact" className="scroll-down">
-        Scroll Down
-      </a>
+      <div className="scroll-down">
+        <a href="#contact">
+          <p>yourname@gmail.com</p>
+        </a>
+      </div>
       <div className="main-title">
         <div className="memoji">
           <img src={avatar} />

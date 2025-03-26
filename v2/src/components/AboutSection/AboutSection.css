@@ -1,26 +1,32 @@
 .about-section {
   position: relative;
+  z-index: -1;
   display: flex;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* margin: 50px; */
+  background-image: url("../../assets/veect_asset_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .about-section h3 {
   font-family: "Poppins";
   font-size: 1.2rem;
   font-weight: 900;
-  color: #f0f2ff;
   text-align: center;
+
+  color: #abaff2;
   margin-bottom: 0;
 }
 .about-section h2 {
+  color: #f0f2ff;
   font-family: "Poppins";
   font-size: 2.5rem;
   font-weight: 900;
-  color: #abaff2;
   text-align: center;
   margin-bottom: 1rem;
   font-weight: 900;
@@ -28,102 +34,28 @@
 }
 .container {
   width: 100%;
-  margin: 1rem;
+  /* margin: 1rem; */
+  height: 100%;
 }
 
 .about__container {
-  display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
   background-color: #21235e;
+  display: flex;
 }
 
-.about__me {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(45deg, transparent, #abaff2, transparent);
-  display: grid;
-  place-items: center;
-}
-.about__me-image {
-  border-radius: 2rem;
-  width: 100%;
+.abt_content {
+  position: absolute;
+  right: 50px;
+  width: 50%;
   height: 100%;
-  object-fit: cover;
-
-  overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
-}
-.about__me-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  /* width: 100%; */
-  object-fit: cover;
-}
-.about__me-image:hover {
-  transform: rotate(0deg);
-}
-
-.about__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.about__card {
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
-  border-radius: 1rem;
-  padding: 2rem;
-  text-align: center;
-  transition: var(--transition);
-}
-
-.about__card:hover {
-  background: transparent;
-  border-color: #abaff2;
-  cursor: default;
-}
-
-.about__icon {
-  color: #f0f2ff;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.about__card h5 {
-  font-size: 1.5rem;
-}
-
-.about__card small {
-  font-size: 1.3rem;
+  background-color: #21235e;
+  font-family: "Roboto";
+  font-size: 1.2rem;
   color: #f0f2ff;
 }
-
-.about__content p {
-  margin: 2rem 0 2.6rem;
-  color: #f0f2ff;
-}
-
-@media screen and (max-width: 1024px) {
-  .about__container {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  .about__me {
-    width: 50%;
-    margin: 2rem auto 4rem;
-  }
-  .about__content p {
-    margin: 1rem 0 1.5rem;
-  }
-}
-
 /* ======media queries for mobile(small devices) =========*/
 
 @media screen and (max-width: 600px) {
