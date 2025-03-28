@@ -1,13 +1,28 @@
 import React from "react";
 import "./AboutSection.css";
-// import ME from "../../assets/avatar.png";
-// import { FaAward } from "react-icons/fa";
-// import { FiUsers } from "react-icons/fi";
-// import { VscFolderLibrary } from "react-icons/vsc";
 
 const AboutSection: React.FC = () => {
+  const [windowWidth, setWindowWidth] = React.useState<number>(
+    window.innerWidth
+  );
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <section id="about" className="about-section">
+    <section
+      id="about"
+      className={`${
+        windowWidth < 768 ? "about-section-mobile" : "about-section"
+      }`}
+    >
       <h3>Get To Know</h3>
       <h2>About Me</h2>
 

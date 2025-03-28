@@ -13,7 +13,42 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.about-section h3 {
+
+.about-section-mobile {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* margin: 50px; */
+  background-image: url("../../assets/vect_asset_bg1_mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-section-mobile h3 {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
+
+  color: #abaff2;
+  margin-bottom: 0;
+}
+.about-section-mobile h2 {
+  color: #f0f2ff;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  margin-top: 0;
+}
+.about-section-mobile h3 {
   font-family: "Poppins";
   font-size: 1.2rem;
   font-weight: 900;
@@ -68,11 +103,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .about__content {
-    text-align: center;
+
+  .abt_content {
     margin: 1.5rem 0;
-  }
-  .about__content p {
-    margin: 1.5rem 0;
+    font-size: 1rem;
   }
 }
