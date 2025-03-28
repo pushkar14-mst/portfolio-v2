@@ -1,9 +1,13 @@
 import "./Footer.css";
 import footerBg from "../../assets/vect_asset_bg_2.png";
+import logo from "../../assets/logo_pj.png";
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
         <p>
           Made with{" "}
           <span role="img" aria-label="love">
