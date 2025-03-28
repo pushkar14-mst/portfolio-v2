@@ -111,7 +111,7 @@
   gap: 1rem;
   position: absolute;
   right: -50px;
-  bottom: 100px;
+  bottom: 130px;
   color: #abaff2;
 }
 .scroll-down a {
@@ -148,6 +148,13 @@
   .main-title h1 {
     font-size: 3rem; /* Reduce title size for smaller screens */
     text-align: center;
+  }
+
+  .social-media {
+    left: 25px;
+  }
+  .scroll-down {
+    display: none;
   }
 
   .title,

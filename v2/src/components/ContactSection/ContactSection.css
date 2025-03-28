@@ -1,0 +1,75 @@
+.contact-section {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px;
+  margin-bottom: 2rem;
+  background: linear-gradient(180deg, #4549c4 0%, #21235e 83.5%);
+}
+.contact-section h3 {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #f0f2ff;
+  text-align: center;
+  margin-bottom: 0;
+}
+.contact-section h2 {
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #abaff2;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.contact-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 150px;
+  background: #4549c4;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 50px;
+  }
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .contact-section h3 {
+    font-size: 1rem;
+  }
+  .contact-section-container {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .contact-card {
+    width: 100px;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}

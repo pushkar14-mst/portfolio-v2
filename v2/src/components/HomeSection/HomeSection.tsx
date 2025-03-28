@@ -3,14 +3,14 @@ import "./HomeSection.css";
 import avatar from "../../assets/avatar.png";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+import { FiTwitter } from "react-icons/fi";
 
 const HomePage: React.FC = () => {
   return (
     <section className="home-section">
       <div className="scroll-down">
         <a href="#contact">
-          <p>yourname@gmail.com</p>
+          <p>prachijethava1211@gmail.com</p>
         </a>
       </div>
       <div className="main-title">
@@ -44,14 +44,14 @@ const HomePage: React.FC = () => {
 const SocialMedia: React.FC = () => {
   return (
     <div className="social-media">
-      <a href="https://www.linkedin.com/in/manohar19" target="_blank">
+      <a href="https://www.linkedin.com/in/prachijethava/" target="_blank">
         <BsLinkedin color="#abaff2" />
       </a>
-      <a href="https://github.com/manohar-19" target="_blank">
+      <a href="https://github.com/prachi1211" target="_blank">
         <FaGithub color="#abaff2" />
       </a>
-      <a href="https://dribbble.com" target="_blank">
-        <FiMail color="#abaff2" />
+      <a href="https://twitter.com/PrachiJethava" target="_blank">
+        <FiTwitter color="#abaff2" />
       </a>
     </div>
   );

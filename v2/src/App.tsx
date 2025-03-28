@@ -1,5 +1,7 @@
 import AboutSection from "./components/AboutSection/AboutSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
+import Footer from "./components/Footer/Footer";
 import HomeSection from "./components/HomeSection/HomeSection";
 import Nav from "./components/Nav/Nav";
 import ProjectSection from "./components/ProjectSection/ProjectSection";
@@ -14,6 +16,8 @@ const App = () => {
       <ExperienceSection />
       <SkillsSection />
       <ProjectSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 };
