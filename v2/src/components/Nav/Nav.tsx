@@ -3,6 +3,7 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { useState } from "react";
+import { FiSettings } from "react-icons/fi";
 
 const Nav: React.FC = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -31,11 +32,18 @@ const Nav: React.FC = () => {
         <BiBook />
       </a>
       <a
-        href="#services"
+        href="#projects-section-container"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : ""}
       >
         <RiServiceLine />
+      </a>
+      <a
+        href="#skills"
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
+      >
+        <FiSettings />
       </a>
       <a
         href="#contact"
