@@ -104,6 +104,27 @@
   color: #abaff2;
 }
 
+.download-btn {
+  font-family: "Poppins";
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #abaff2;
+  color: #f0f2ff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #9a9fe2;
+}
+
+.download-btn:active {
+  background-color: #8a8fc1;
+}
 .scroll-down {
   display: flex;
   flex-direction: column;
@@ -112,11 +133,10 @@
   position: absolute;
   right: -50px;
   bottom: 130px;
-  color: #abaff2;
 }
 .scroll-down a {
   font-size: 1.2rem;
-  color: var(--color-white);
+  color: #f0f2ff;
   font-family: "Poppins";
   transform: rotate(90deg);
   margin: 0;
@@ -179,25 +199,9 @@
   .nav-area {
     padding: 15px; /* Reduce padding for smaller screens */
   }
-}
-
-/* Extra small screens (mobile portrait) */
-@media screen and (max-width: 480px) {
-  .main-title h1 {
-    font-size: 2.5rem; /* Even smaller title font size */
-  }
-
-  .title,
-  .memoji h1 {
-    font-size: 0.9rem; /* Adjust for better fit */
-  }
-
-  .nav-bar a {
-    font-size: 1rem; /* Slightly smaller nav links */
-  }
-
-  .nav-area {
-    padding: 10px; /* Further reduce padding */
+  .download-btn {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
   }
 }
 

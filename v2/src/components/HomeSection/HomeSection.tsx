@@ -6,6 +6,12 @@ import { FaGithub } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 
 const HomePage: React.FC = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "../../assets/";
+    link.download = "Prachi Piyushbhai Jethava_SE_main.docx";
+    link.click();
+  };
   return (
     <section className="home-section">
       <div className="scroll-down">
@@ -35,6 +41,9 @@ const HomePage: React.FC = () => {
           </h1>
         </div>
       </div>
+      <button className="download-btn" onClick={handleDownload}>
+        Resume <span>📄</span>
+      </button>
 
       <SocialMedia />
     </section>
