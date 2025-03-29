@@ -166,7 +166,7 @@
     flex-direction: column;
   }
   .main-title h1 {
-    font-size: 3rem; /* Reduce title size for smaller screens */
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -179,40 +179,28 @@
 
   .title,
   .memoji h1 {
-    font-size: 1rem; /* Smaller font size for better readability */
-  }
+    font-size: 1rem;
 
-  .nav-bar ul {
-    gap: 10px; /* Reduce gap between nav links */
-    padding: 0;
-    flex-direction: column;
-  }
+    .nav-bar ul {
+      gap: 10px;
+      padding: 0;
+      flex-direction: column;
+    }
 
-  .nav-bar a {
-    font-size: 1.1rem; /* Adjust nav link font size */
-  }
+    .nav-bar a {
+      font-size: 1.1rem;
+    }
 
-  .home-section {
-    padding: 0 20px; /* Add some padding to prevent content from touching the edges */
-  }
+    .home-section {
+      padding: 0 20px;
+    }
 
-  .nav-area {
-    padding: 15px; /* Reduce padding for smaller screens */
-  }
-  .download-btn {
-    padding: 10px 20px; /* Adjust button padding */
-    font-size: 14px; /* Adjust button font size */
-  }
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
+    .nav-area {
+      padding: 15px;
+    }
+    .download-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
   }
 }
