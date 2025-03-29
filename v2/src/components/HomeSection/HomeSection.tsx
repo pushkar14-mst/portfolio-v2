@@ -8,7 +8,7 @@ import { FiTwitter } from "react-icons/fi";
 const HomePage: React.FC = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "../../assets/";
+    link.href = "./Prachi Piyushbhai Jethava_SE_main.docx";
     link.download = "Prachi Piyushbhai Jethava_SE_main.docx";
     link.click();
   };
