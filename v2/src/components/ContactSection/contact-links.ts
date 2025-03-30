@@ -18,7 +18,7 @@ export const contactLinks: any = [
     title: "GitHub",
   },
   {
-    link: "mailto:prachijethava1211@gmail.com",
+    link: "mailto:prachi.jethava2001@gmail.com",
     icon: FiMail,
     title: "Email",
   },

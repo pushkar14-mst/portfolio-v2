@@ -6,17 +6,11 @@ import { FaGithub } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 
 const HomePage: React.FC = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/Prachi Piyushbhai Jethava_SE_main.docx";
-    link.download = "Prachi Piyushbhai Jethava_SE_main.docx";
-    link.click();
-  };
   return (
     <section className="home-section">
       <div className="scroll-down">
         <a href="#contact">
-          <p>prachijethava1211@gmail.com</p>
+          <p>prachi.jethava2001@gmail.com</p>
         </a>
       </div>
       <div className="main-title">
@@ -41,9 +35,6 @@ const HomePage: React.FC = () => {
           </h1>
         </div>
       </div>
-      <button className="download-btn" onClick={handleDownload}>
-        Resume <span>📄</span>
-      </button>
 
       <SocialMedia />
     </section>

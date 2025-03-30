@@ -4,7 +4,7 @@ import { Project, projects } from "./projects";
 
 const ProjectSection = () => {
   return (
-    <section className="projects-section-container">
+    <section className="projects-section-container" id="projects">
       <h3 id="project-heading">Projects</h3>
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />

@@ -67,7 +67,6 @@
 .project-card-buttons {
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 
 .git-button {
@@ -77,6 +76,7 @@
   font-size: 2rem;
   color: var(--color-white);
 }
+
 .git-button:hover {
   color: var(--color-primary);
 }
@@ -104,6 +104,11 @@
 
   .project-card {
     flex-direction: column;
+  }
+
+  .project-card-buttons {
+    justify-content: center;
+    margin-bottom: 10px;
   }
 
   .project-card-content {

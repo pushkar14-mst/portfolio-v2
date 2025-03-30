@@ -1,9 +1,10 @@
 import "./Nav.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
 import { useState } from "react";
 import { FiSettings } from "react-icons/fi";
+import { IoDocumentOutline } from "react-icons/io5";
+import { GoProject } from "react-icons/go";
 
 const Nav: React.FC = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -32,11 +33,18 @@ const Nav: React.FC = () => {
         <BiBook />
       </a>
       <a
-        href="#projects-section-container"
+        href="#resume"
+        onClick={() => setActiveNav("#resume")}
+        className={activeNav === "#resume" ? "active" : ""}
+      >
+        <IoDocumentOutline />
+      </a>
+      <a
+        href="#projects"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : ""}
       >
-        <RiServiceLine />
+        <GoProject />
       </a>
       <a
         href="#skills"
