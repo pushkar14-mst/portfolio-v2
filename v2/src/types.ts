@@ -1,23 +1,23 @@
-export interface Project {
+export interface IProject {
   title: string;
   description: string;
   ghLink: string;
   imgPath: string;
 }
 
-export interface Skill {
+export interface ISkill {
   title: string;
   icon: any;
 }
 
-export interface Experience {
+export interface IExperience {
   title: string;
   company: string;
   date: string;
   description: string[];
 }
 
-export interface ContactLink {
+export interface IContactLink {
   title: string;
   icon: any;
   link: string;

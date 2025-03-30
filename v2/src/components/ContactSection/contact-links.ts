@@ -1,8 +1,8 @@
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
-import { ContactLink } from "../../types";
+import { IContactLink } from "../../types";
 
-export const contactLinks: ContactLink[] = [
+export const contactLinks: IContactLink[] = [
   {
     link: "https://www.linkedin.com/in/prachijethava/",
     icon: BsLinkedin,

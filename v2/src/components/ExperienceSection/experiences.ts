@@ -1,6 +1,6 @@
-import { Experience } from "../../types";
+import { IExperience } from "../../types";
 
-export const experiences: Experience[] = [
+export const experiences: IExperience[] = [
   {
     title: "Full Stack Developer",
     company: "Dream Leo",

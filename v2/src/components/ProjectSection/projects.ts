@@ -5,9 +5,9 @@ import music from "../../assets/music.png";
 import ipl from "../../assets/IPL.png";
 import employee from "../../assets/Employee.png";
 import cancer from "../../assets/cancer.png";
-import { Project } from "../../types";
+import { IProject } from "../../types";
 
-export const projects: Project[] = [
+export const projects: IProject[] = [
   {
     imgPath: youtube,
     title: "Unveiling Trends: A Cloud-Driven Data",

@@ -1,6 +1,11 @@
 import React from "react";
 import "./ExperienceSection.css";
 import { experiences } from "./experiences";
+import { IExperience } from "../../types";
+
+interface IExperienceProps {
+  job: IExperience;
+}
 const ExperienceSection: React.FC = () => {
   return (
     <>
@@ -21,7 +26,7 @@ const ExperienceSection: React.FC = () => {
 
 export default ExperienceSection;
 
-const ExperienceList: React.FC<any> = (props: any) => {
+const ExperienceList: React.FC<IExperienceProps> = (props) => {
   return (
     <>
       <li>

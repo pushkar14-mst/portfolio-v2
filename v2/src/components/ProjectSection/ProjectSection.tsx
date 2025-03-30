@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa6";
 import "./ProjectSection.css";
-import { Project, projects } from "./projects";
+import { projects } from "./projects";
+import { IProject } from "../../types";
 
 const ProjectSection = () => {
   return (
@@ -13,7 +14,7 @@ const ProjectSection = () => {
   );
 };
 
-const ProjectCard: React.FC<Project> = ({
+const ProjectCard: React.FC<IProject> = ({
   title,
   description,
   imgPath,
