@@ -14,8 +14,9 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
+import { Skill } from "../../types";
 
-export const skills: any = [
+export const skills: Skill[] = [
   {
     title: "Python",
     icon: FaPython,

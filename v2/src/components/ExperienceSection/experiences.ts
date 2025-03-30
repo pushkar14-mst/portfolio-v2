@@ -1,4 +1,6 @@
-export const experiences: any = [
+import { Experience } from "../../types";
+
+export const experiences: Experience[] = [
   {
     title: "Full Stack Developer",
     company: "Dream Leo",

@@ -5,13 +5,7 @@ import music from "../../assets/music.png";
 import ipl from "../../assets/IPL.png";
 import employee from "../../assets/Employee.png";
 import cancer from "../../assets/cancer.png";
-
-export interface Project {
-  title: string;
-  description: string;
-  ghLink: string;
-  imgPath: string;
-}
+import { Project } from "../../types";
 
 export const projects: Project[] = [
   {
