@@ -32,13 +32,13 @@ const Nav: React.FC = () => {
       >
         <BiBook />
       </a>
-      <a
+      {/* <a
         href="#resume"
         onClick={() => setActiveNav("#resume")}
         className={activeNav === "#resume" ? "active" : ""}
       >
         <IoDocumentOutline />
-      </a>
+      </a> */}
       <a
         href="#projects"
         onClick={() => setActiveNav("#services")}
