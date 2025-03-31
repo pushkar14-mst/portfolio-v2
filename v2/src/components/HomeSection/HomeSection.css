@@ -140,6 +140,24 @@
   background: #abaff2;
 }
 
+.resume-toggle-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #abaff2;
+  color: #f0f2ff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-toggle-btn:hover {
+  background-color: #9a9fe2;
+}
+
 @media screen and (max-width: 768px) {
   .main-title {
     flex-direction: column;
@@ -155,31 +173,34 @@
   .scroll-down {
     display: none;
   }
-
+  .resume-toggle-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
   .title,
   .memoji h1 {
     font-size: 1rem;
+  }
+  .nav-bar ul {
+    gap: 10px;
+    padding: 0;
+    flex-direction: column;
+  }
 
-    .nav-bar ul {
-      gap: 10px;
-      padding: 0;
-      flex-direction: column;
-    }
+  .nav-bar a {
+    font-size: 1.1rem;
+  }
 
-    .nav-bar a {
-      font-size: 1.1rem;
-    }
+  .home-section {
+    padding: 0 20px;
+  }
 
-    .home-section {
-      padding: 0 20px;
-    }
-
-    .nav-area {
-      padding: 15px;
-    }
-    .download-btn {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
+  .nav-area {
+    padding: 15px;
+  }
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }

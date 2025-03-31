@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeSection.css";
 import avatar from "../../assets/avatar.png";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
+import ResumeSection from "../ResumeSection/ResumeSection";
 
 const HomePage: React.FC = () => {
+  const [showResume, setShowResume] = useState<boolean>(false);
+
   return (
     <section className="home-section">
       <div className="scroll-down">
@@ -35,8 +38,15 @@ const HomePage: React.FC = () => {
           </h1>
         </div>
       </div>
+      <button className="resume-toggle-btn" onClick={() => setShowResume(true)}>
+        Resume 📄
+      </button>
 
       <SocialMedia />
+      <ResumeSection
+        isVisible={showResume}
+        onClose={() => setShowResume(false)}
+      />
     </section>
   );
 };
