@@ -3,7 +3,7 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from "react";
 import { FiSettings } from "react-icons/fi";
-import { IoDocumentOutline } from "react-icons/io5";
+// import { IoDocumentOutline } from "react-icons/io5";
 import { GoProject } from "react-icons/go";
 
 const Nav: React.FC = () => {
