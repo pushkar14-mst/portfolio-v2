@@ -8,12 +8,12 @@ const ContactSection: React.FC = () => {
       <div className="contact-section-container">
         {contactLinks.map((link: any) => {
           return (
-            <div className="contact-card">
-              {link.icon()}
-              <a href={link.link} target="_blank">
+            <a href={link.link} target="_blank">
+              <div className="contact-card">
+                {link.icon()}
                 <h3>{link.title}</h3>
-              </a>
-            </div>
+              </div>
+            </a>
           );
         })}
       </div>

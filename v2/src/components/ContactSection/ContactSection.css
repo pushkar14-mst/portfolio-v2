@@ -29,6 +29,16 @@
   margin-top: 0;
 }
 
+.contact-section a {
+  color: #f0f2ff;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  color: #abaff2;
+  cursor: pointer;
+}
+
 .contact-section-container {
   display: flex;
   justify-content: center;
@@ -51,6 +61,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: var(--transition);
   font-size: 2rem;
+}
+.contact-card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
