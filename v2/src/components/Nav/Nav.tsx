@@ -40,6 +40,7 @@ const Nav: React.FC = () => {
       >
         <GrAchievement />
       </a>
+
       <a
         href="#projects"
         onClick={() => setActiveNav("#services")}

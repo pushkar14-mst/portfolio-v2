@@ -144,7 +144,7 @@
   font-family: "Poppins";
   font-size: 1.7rem;
   font-weight: 800;
-  color: #0099cc;
+  color: #99e6ff;
   margin-bottom: 25px;
 }
 
@@ -158,8 +158,8 @@
 
 .cert-card,
 .lead-card {
-  background: #ffffff;
-  border: 2px solid #99e6ff;
+  background: #f0f2ff;
+  border: 2px solid #0077aa;
   border-radius: 15px;
   padding: 16px 20px;
   width: 300px;
@@ -187,7 +187,7 @@
 
 .cert-card strong,
 .lead-card strong {
-  color: #002233;
+  color: #21235e;
   font-weight: 700;
   font-family: "Poppins";
 }
@@ -196,7 +196,7 @@
 .lead-card p {
   margin: 4px 0;
   font-size: 0.9rem;
-  color: #334;
+  color: #4043a0;
 }
 
 .cert-card a,
