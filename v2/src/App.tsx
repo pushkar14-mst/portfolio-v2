@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection/AboutSection";
+import AchievementsSection from "./components/AchievementsSection/AchievementsSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
 import Footer from "./components/Footer/Footer";
@@ -15,7 +16,7 @@ const App = () => {
       <HomeSection />
       <AboutSection />
       <ExperienceSection />
-      {/* <ResumeSection /> */}
+      <AchievementsSection />
       <SkillsSection />
       <ProjectSection />
       <ContactSection />

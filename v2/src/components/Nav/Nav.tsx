@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FiSettings } from "react-icons/fi";
 // import { IoDocumentOutline } from "react-icons/io5";
 import { GoProject } from "react-icons/go";
+import { GrAchievement } from "react-icons/gr";
 
 const Nav: React.FC = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -32,13 +33,13 @@ const Nav: React.FC = () => {
       >
         <BiBook />
       </a>
-      {/* <a
-        href="#resume"
-        onClick={() => setActiveNav("#resume")}
-        className={activeNav === "#resume" ? "active" : ""}
+      <a
+        href="#achievement"
+        onClick={() => setActiveNav("#achievement")}
+        className={activeNav === "#achievement" ? "active" : ""}
       >
-        <IoDocumentOutline />
-      </a> */}
+        <GrAchievement />
+      </a>
       <a
         href="#projects"
         onClick={() => setActiveNav("#services")}
